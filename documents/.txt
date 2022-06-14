@@ -1,0 +1,28 @@
+1) DATA
+2) Actions
+3) Components + Presentation
+
+Components:
+- list of products: course name,price,start at, number of classes
+
+      *table
+tr
+td
+
+Actions: 
+- user is sorting, 
+    * JS eventLIstener
+
+
+Presentation - Constant:
+ - layout
+ - title
+ - table
+ - filter bar (search, sort, button)
+ - size
+
+DATA - Changing for every store:
+ - course name
+ - start at
+ - number of classes
+ - price
