@@ -20,7 +20,17 @@ const courses = [
 ]
 const table = document.querySelector('.products')
 
-function displayProducts(){
+document.getElementById('searchButton').addEventListener('click',()=>{
+    const userSearch = document.getElementById('searchField').value.trim()
+    
+    const searchedArr = courses.filter(course=>{
+        return course.courseName.toLowerCase().includes(userSearch.toLowerCase())
+    })
+    console.log(searchedArr);
+    displayProducts(searchedArr)
+})
+
+function displayProducts(arrayData=courses){
     table.innerHTML=
     `<tr>
         <th>Course Name</th>
@@ -28,7 +38,7 @@ function displayProducts(){
         <th>Number Of Classes</th>
         <th>price</th>
     </tr>`
-    courses.forEach(course=>{
+    arrayData.forEach(course=>{
         table.innerHTML+=
         `<tr>
         <td>${course.courseName}</td>
