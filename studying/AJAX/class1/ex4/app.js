@@ -1,4 +1,4 @@
-fetch('http://127.0.0.1:5500/studying/AJAX/ex4/users.json')
+fetch('http://127.0.0.1:5500/studying/AJAX/class1/ex4/users.json')
 .then(response=>response.json())
 .then(json=>{
     let table = document.getElementById('the-table')
